@@ -60,7 +60,7 @@
 .token.property,
 .token.symbol,
 .token.tag {
-  color: rgba(16, 185, 129, 1);
+  color: #fca369;
 }
 .token.attr-name,
 .token.builtin,
@@ -68,7 +68,7 @@
 .token.inserted,
 .token.selector,
 .token.string {
-  color: rgba(139, 92, 246, 1);
+  color: #92d192;
 }
 .language-css .token.string,
 .style .token.string,
@@ -80,11 +80,11 @@
 .token.atrule,
 .token.attr-value,
 .token.keyword {
-  color: rgba(59, 130, 246, 1);
+  color: #ffeea6;
 }
 .token.class-name,
 .token.function {
-  color: rgba(236, 72, 153, 1);
+  color: #76d4d6;
 }
 .token.important,
 .token.regex,
