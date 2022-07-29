@@ -52,6 +52,7 @@ export default withOGImage<'query', 'id'>({
           config.defaultPageCover,
         block
       )
+      console.log('image', image)
 
       const imageCoverPosition =
         (block as PageBlock).format?.page_cover_position ??
@@ -61,13 +62,16 @@ export default withOGImage<'query', 'id'>({
         : null
 
       const blockIcon = getBlockIcon(block, recordMap)
+      console.log('blockIcon', blockIcon)
       const authorImage = mapImageUrl(
         blockIcon && isUrl(blockIcon) ? blockIcon : config.defaultPageIcon,
         block
       )
+      console.log('authorImage', authorImage)
 
       const author =
         getPageProperty<string>('Author', block, recordMap) || config.author
+      console.log('author', author)
 
       // const socialDescription =
       //   getPageProperty<string>('Description', block, recordMap) ||
@@ -78,6 +82,7 @@ export default withOGImage<'query', 'id'>({
         block,
         recordMap
       )
+      console.log('lastUpdatedTime', lastUpdatedTime)
       const publishedTime = getPageProperty<number>(
         'Published',
         block,
